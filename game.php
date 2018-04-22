@@ -10,6 +10,39 @@
 </head>
 <body>
 	<?php getHeader(); ?>
+
+	<div class="modal fade" id="info" role="dialog" style="overflow-y: hidden;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<h4>XDLINE GAMES</h4>	
+<pre>XDLINE is a student organization 
+in Cavite State University - Silang Campus
+aiming for the excellence of Computer Related Students
+of the said Campus by competing and experiencing
+local, national and international competitions, 
+and summits. XDLINE Games is based on 
+Google Games Southeast Asia Manila 2018 
+which is held for the first time here in our country
+at the Google PH Manila Office in BGC, Taguig.
+
+We, the XDLINE Developers are one of those lucky 
+participants chosen by the organizers to showcase our talents
+and skills in programming, probleming solving and analysis. 
+Today, we want you to experience the 
+joy and thrill we had those times. 
+We are glad to have you participating to this such event. 
+All our greetings be upon you.
+				
+Truly Yours,
+XDLINE Team
+</pre>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger"  data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class = "container">
 
 		<?php if($_REQUEST['page'] == 'mission') : ?>

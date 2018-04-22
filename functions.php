@@ -53,7 +53,8 @@ function getHeader(){
 			<p>Welcome, <a href="http://localhost/xdline-games"><?php echo $_SESSION['xdl_part_details']['username']; ?></a></p>
 		</div>
 		<div class="col-md-1">
-			<i class="fa fa-info"></i>
+			<i class="fa fa-info" data-toggle="modal" 
+				data-target="#info" data-dismiss="modal"></i>
 		</div>			
 	</div>
 </div>
