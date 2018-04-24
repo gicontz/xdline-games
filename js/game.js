@@ -1,3 +1,5 @@
+var mission_mode = "";
+var difficulty = "";
 
 $(document).ready(function(){
 
@@ -20,7 +22,7 @@ $(".btn-modals").click(function(){
 	$('.alert').hide();
 });
 
-    $('.alert').hide();
+$('.alert').hide();
 
 $('.form-signin').submit(function(e){
 	e.preventDefault();
@@ -29,16 +31,16 @@ $('.form-signin').submit(function(e){
 	d['password'] = $("#pw").val();
 
 	$.post("login.php", {
-	    data: d},
-	    function(callback){   
+		data: d},
+		function(callback){   
 	      // var subload = JSON.parse(callback);   
 	      if(callback == "SUCCESS"){
 	      	window.open('game.php?page=mission', '_self');
 	      }else{
-                $('.alert').show();	      	
+	      	$('.alert').show();	      	
 	      }
-	    }
-	);
+	  }
+	  );
 });
 
 $('.form-orgsignin').submit(function(e){
@@ -46,6 +48,9 @@ $('.form-orgsignin').submit(function(e){
 	var pw = $("#orgpass").val();
 
 	if(pw == "XDLGAMES2018"){
+		$.post("orgpass.php", {},
+			function(callback){}
+	  );
 		window.open('game.php?page=mission' + mission_num, '_self');
 	}else{
 		$('.modal-footer .btn-danger').click();

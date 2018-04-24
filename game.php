@@ -2,10 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>XDLINE GAMES - LOGIN</title>
+	<title>XDLINE GAMES - <?php echo $_REQUEST['page']; ?></title>
 	<?php
 	getHeaderAssets(); 
 	session_start();
+	if (!isset($_SESSION['xdl_part_details'])){
+		header('location: http://' . $_SERVER['SERVER_NAME'] . '/xdline-games');
+	}
 	?>
 </head>
 <body>
@@ -45,7 +48,10 @@ XDLINE Team
 
 	<div class = "container">
 
-		<?php if($_REQUEST['page'] == 'mission') : ?>
+		<?php if($_REQUEST['page'] == 'mission') : 
+
+			$_SESSION['orgpassed'] = false;
+		?>
 			<div class="mission-levels levels">
 				<div class="row">
 					<div class="eas-level level col-md-offset-1 col-md-4 col-sm-12" id="mission-1" data-toggle="modal" 
@@ -81,8 +87,8 @@ XDLINE Team
 <?php endif; ?>
 
 
-<?php if($_REQUEST['page'] == 'mission1' || $_REQUEST['page'] == 'mission2') : 
-if(!isset($_SESSION['xdl_part_details'])){
+<?php if(($_REQUEST['page'] == 'mission1' || $_REQUEST['page'] == 'mission2')) : 
+if(!isset($_SESSION['xdl_part_details']) || !$_SESSION['orgpassed']){
 	header('location: ?page=mission');
 }
 ?>
@@ -90,7 +96,8 @@ if(!isset($_SESSION['xdl_part_details'])){
 	<div class="content-quest">
 	</div>
 			<script type="text/javascript">
-				$(".content-quest").load('contents/'+'<?php echo $_REQUEST['page']; ?>'+'.html');
+				mission_mode = '<?php echo $_REQUEST['page']; ?>';
+				$(".content-quest").load('contents/'+ mission_mode +'.html');
 			</script>
 <div class="text-center">
 	<button type="button" class="btn btn-primary" data-toggle="modal" 
@@ -101,30 +108,33 @@ if(!isset($_SESSION['xdl_part_details'])){
 
 <div class="levels">
 	<div class="row">
-		<div class="eas-level level col-md-4 col-sm-12" id="easy">
+		<div class="eas-level level col-md-4 col-sm-12" id="easy" data-toggle="modal" 
+	data-target="#modal_questions" data-dismiss="modal">
 			<p>EASY</p>
 		</div>
-		<div class="ave-level level col-md-4 col-sm-12" id="average">
+		<div class="ave-level level col-md-4 col-sm-12" id="average" data-toggle="modal" 
+	data-target="#modal_questions" data-dismiss="modal">
 			<p>AVERAGE</p>					
 		</div>
-		<div class="dif-level level col-md-4 col-sm-12" id="difficult">
+		<div class="dif-level level col-md-4 col-sm-12" id="difficult" data-toggle="modal" 
+	data-target="#modal_questions" data-dismiss="modal">
 			<p>DIFFICULT</p>					
 		</div>
 	</div>
 </div>
 </div>
 
-<div class="modal fade" id="modal_answer" role="dialog" style="overflow-y: hidden;">
+<div class="modal fade" id="modal_answer" role="dialog" style="overflow-y: hidden;" >
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form action="" method="post" name="answer_form" class="form-signin">       
+			<form action="" method="post" name="answer_form" class="form-signin" id="send_answer">       
 				<h3 class="form-signin-heading">SUBMIT YOUR ANSWER</h3>
 				<hr class="colorgraph"><br>
 
-				<input type="text" class="form-control" name="answer" placeholder="Answer" required="" autofocus="" />
+				<input type="text" class="form-control" id="answer" name="answer" placeholder="Answer" required="" autofocus="" />
 				<br>   		  
 
-				<button class="btn btn-lg btn-primary btn-block"  name="send_answer" value="Login" type="Submit">SUBMIT</button>  			
+				<button class="btn btn-lg btn-primary btn-block" name="send_answer" value="Login" type="Submit">SUBMIT</button>  			
 			</form>	
 			<div class="modal-footer">
 				<button type="button" class="btn btn-danger"  data-dismiss="modal">Close</button>
@@ -136,6 +146,14 @@ if(!isset($_SESSION['xdl_part_details'])){
 <div class="modal fade" id="modal_questions" role="dialog" style="overflow-y: hidden;">
 	<div class="modal-dialog">
 		<div class="modal-content">
+			<div class="modal-header">
+
+			</div>
+
+
+			<div class="modal-levels">
+				<button class='btn btn-default quest_level'></button>
+			</div>
 
 			<div class="modal-footer">
 				<button type="button" class="btn btn-danger"  data-dismiss="modal">Close</button>
@@ -152,5 +170,8 @@ if(!isset($_SESSION['xdl_part_details'])){
 </div>
 
 <?php getFooterContents(); ?>
+<script type="text/javascript" src="assets/mission1.js"></script>
+<!-- <script type="text/javascript" src="assets/mission2.js"></script> -->
+<script type="text/javascript" src="js/missions.js"></script>
 </body>
 </html>

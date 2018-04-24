@@ -28,7 +28,7 @@ function getFooterContents(){
 			<p>CROSS DEVELOPERS LEAGUE</p>
 		</div>
 		<div class="col-md-1">
-			<img src="images/xdl-logo.png" class="footer-logo">
+			<a href="lib/logout.php"><img src="images/xdl-logo.png" class="footer-logo"></a>
 		</div>			
 	</div>
 </div>
