@@ -1,4 +1,4 @@
-var mission1 = {
+var mission2 = {
 	'easy' : [{
 		't' : 'Unique-io Shoe Shop',
 		'q' : 'A shoe shop sells a pair of shoes for $100. The price goes up if the shoe was bought in the 7th, 12th time of the same kind of their shoes on the same day at $10. If John and Willy are customers during that day and the best seller of shoes was bought 5th time on that day, How much worth of money in dollars do John and Willy will spend if they both bought 4 pairs of shoes of the same kind by which is the best seller?<br><img src="images/shoe.jpg" class="mission-img"><img src="images/dollar.jpg" class="mission-img">',
