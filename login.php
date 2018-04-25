@@ -3,8 +3,9 @@ include_once('functions.php');
 
 session_start();
 $cred = $_POST['data'];
-$un = mysql_escape_string($cred['username']);
-$pw = mysql_escape_string($cred['password']);
+$connect = $XDL->xdline_connect("config.ini");
+$un = mysqli_escape_string($connect, $cred['username']);
+$pw = mysqli_escape_string($connect, $cred['password']);
 
 $pw = $XDL->encrypt_password($pw);
 

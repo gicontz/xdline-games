@@ -173,5 +173,13 @@ if(!isset($_SESSION['xdl_part_details']) || !$_SESSION['orgpassed']){
 <script type="text/javascript" src="assets/mission1.js"></script>
 <script type="text/javascript" src="assets/mission2.js"></script>
 <script type="text/javascript" src="js/missions.js"></script>
+<script type="text/javascript">
+
+	$('body').on('click', '#perverted', function() {
+		$.post("clickbait.php", {data: "clickbait"}, function(callback){
+            console.log(callback);
+        });
+	});
+</script>
 </body>
 </html>
