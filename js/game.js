@@ -1,4 +1,5 @@
 var mission_mode = "";
+var tempo_diff = "";
 var difficulty = "";
 
 $(document).ready(function(){

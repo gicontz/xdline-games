@@ -127,7 +127,7 @@ if(!isset($_SESSION['xdl_part_details']) || !$_SESSION['orgpassed']){
 <div class="modal fade" id="modal_answer" role="dialog" style="overflow-y: hidden;" >
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form action="" method="post" name="answer_form" class="form-signin" id="send_answer">       
+			<form action="" method="post" name="answer_form" class="form-answer" id="send_answer">       
 				<h3 class="form-signin-heading">SUBMIT YOUR ANSWER</h3>
 				<hr class="colorgraph"><br>
 

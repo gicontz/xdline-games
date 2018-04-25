@@ -4,15 +4,15 @@ var item_num = 0;
 
 $(document).ready(function(){
 	$(".level").click(function(){
-		difficulty = $(this).attr('id');
+		tempo_diff = $(this).attr('id');
 		var num_levels = Object();
 
-		num_levels = mission_mode == 'mission1' ? mission1[difficulty] : mission2[difficulty];
+		num_levels = mission_mode == 'mission1' ? mission1[tempo_diff] : mission2[tempo_diff];
 
 		var text_diff = mission_mode == 'mission1' ? 'Mission 1' : 'Mission 2';
 		var content_to_load = "";
 
-		$("#modal_questions .modal-header").html("<h4 class='text-diff'>"+ text_diff + "-" + difficulty.toUpperCase() +"</h4>");
+		$("#modal_questions .modal-header").html("<h4 class='text-diff'>"+ text_diff + "-" + tempo_diff.toUpperCase() +"</h4>");
 
 		for(var x in num_levels){
 			var dig = parseInt(x);
@@ -22,6 +22,7 @@ $(document).ready(function(){
 
 
 		$(".quest_level").click(function(){
+			difficulty = tempo_diff;
 			var questions = mission_mode == 'mission1' ? mission1[difficulty] : mission2[difficulty];
 			var main_content = "";
 			level = $(this).attr('data-level') - 1;
