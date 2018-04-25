@@ -171,7 +171,7 @@ if(!isset($_SESSION['xdl_part_details']) || !$_SESSION['orgpassed']){
 
 <?php getFooterContents(); ?>
 <script type="text/javascript" src="assets/mission1.js"></script>
-<!-- <script type="text/javascript" src="assets/mission2.js"></script> -->
+<script type="text/javascript" src="assets/mission2.js"></script>
 <script type="text/javascript" src="js/missions.js"></script>
 </body>
 </html>

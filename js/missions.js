@@ -54,8 +54,8 @@ $(document).ready(function(){
 						alert("AN ERROR OCCURRED TRY AGAIN!");   	
 			      }else if(callback == "ERROR"){
 						alert("AN ERROR OCCURRED TRY AGAIN!");  
-				  }else{
-						alert("INCORRECT!");  						
+				  }else if(callback == "GG"){
+						alert("ALREADY ANSWERED!");  						
 				  }
 			  }
 			  );

@@ -7,6 +7,8 @@ $info = $_POST['info'];
 
 $team_answer = $XDL::select("COUNT('point_id')", "points_table", "mission_num = {$info['mission_num']} and difficulty = '{$info['difficulty']}' and item_num = {$info['item_num']} and team_id = {$_SESSION['xdl_part_details']['team_id']}")[0]["COUNT('point_id')"];
 
+if($team_answer == 0) {
+
 $number_of_correct_answer = $XDL::select("COUNT('point_id')", "points_table", "mission_num = {$info['mission_num']} and difficulty = '{$info['difficulty']}' and item_num = {$info['item_num']}")[0]["COUNT('point_id')"];
 $dif = "{$info['difficulty']}";
 
@@ -30,6 +32,9 @@ echo $XDL::insert("points_table", array(
 	"difficulty" => $info['difficulty'],
 	"item_num" => $info['item_num']
 	), "SUCCESS", "ERROR");
-
+}
+else{
+	echo "GG";
+}
 
 ?>
