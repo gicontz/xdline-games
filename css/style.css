@@ -153,3 +153,9 @@ input[type="password"] {
   display: block;
 }
 }
+
+@media screen and (max-width: 990px){
+  .level {
+    margin-bottom: 20px;
+}
+}

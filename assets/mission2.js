@@ -1,37 +1,37 @@
 var mission2 = {
 	'easy' : [{
-		't' : 'Unique-io Shoe Shop',
-		'q' : 'A shoe shop sells a pair of shoes for $100. The price goes up if the shoe was bought in the 7th, 12th time of the same kind of their shoes on the same day at $10. If John and Willy are customers during that day and the best seller of shoes was bought 5th time on that day, How much worth of money in dollars do John and Willy will spend if they both bought 4 pairs of shoes of the same kind by which is the best seller?<br><img src="images/shoe.jpg" class="mission-img"><img src="images/dollar.jpg" class="mission-img">',
-		'a' : 830
+		't' : '1. A hundred miles',
+		'q' : 'Print number 1 to 700.',
+		'a' : 'e1'
 	}, {
-		't' : 'Making Lustful and Perverted Mind',
-		'q' : '"Way and go round" is a film show ran in the cinemas in 1987. The film was a story of two person making love in the midnight. Saying words such as "fmnwscvj", "cvblai", "xie" pronounced as "famanwascavaj", "caviblai" and "xig" respectively. What does famanwascavaj means?<br><br><img src="images/makelove.jpg" class="mission-img"><img src="images/encryption.png" class="mission-img"><img src="images/love.jpg" style="cursor: pointer; margin: 20px auto; display: block;">',
-		'a' : 'iloveyou'
+		't' : '2. Count on me',
+		'q' : 'Create a function/method that requires a string, and returns the number of characters do the string have.<br> countChar("xdline"); -> 6 <br> countChar("xdline-games"); -> 12 <br> countChar(""); -> 0<br><br>public int countChar(String str) {<br><br>}',
+		'a' : 'e2'
 	}, {
-		't' : 'Multiples of 3 and 5',
-		'q' : '',
-		'a' : 233168
+		't' : '3. Even or Odd',
+		'q' : 'Create a function that needs an input integer, and tells whether the number is even or odd. without using if else or switch case statement nor any kind of conditional statement including ternary. <br><br>checkNum(7) → Odd<br>checkNum(4) → even<br>checkNum(8) → Even<br><br>public String checkNum(int num) {<br><br>}',
+		'a' : 'e3'
 	}],
 	'average' : [{
-		't' : '10001st prime',
-		'q' : 'By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the 10001st prime number?<img src="images/prime.png" class="mission-img">',
-		'a' : 104743
+		't' : '4. Sort this out',
+		'q' : 'Sort these letters y, m, z, d, o in ascending order, using any kind of algorithm except printing out of final answer. ',
+		'a' : 'a1'
 	}, {
-		't' : 'King\'s Palindromic Volt',
-		'q' : 'In a castle of a monarchy, King Vashti has a 6 digit vault that contains his crown made of pure diamonds. Including all of his wealth earned by the farms of their region. King Vashti never give the idea to anybody how and what is the code for his vault. But, he placed a note inside his drawer for him to give himself a clue whenever he forgets it. <br> Joe the gardener, onced ordered to clean the King\'s room even it is not his task or job to do. At first, he decided not to do it for he doesn\'t know what to touch or not. But at the end, he decided to do the task. <br> After some cleaning tasks, Joe saw the King\'s drawer full of dust so he decided to open it and clean it after. While cleaning it, a gold sheet of paper like object was dropped with a note "Palindrome of Maximum".If a palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is a four digit number. Find out what is the code of King Vashti\'s vault.<br> <img src="images/king.jpg" class="mission-img"><img src="images/vault.jpg" class="mission-img"><img src="images/gardener.jpg" class="mission-img">',
-		'a' : 906609
+		't' : '5. Primarily',
+		'q' : 'Create a function that needs an input integer, and thells whether the number is prime or not. <br><br>isPrime(7) → true<br>isPrime(4) → false<br>isPrime(12) → false<br><br>public boolean isPrime(int num) {<br><br>}',
+		'a' : 'a2'
 	}, {
-		't' : 'Multiples of 3 and 5',
-		'q' : '',
-		'a' : 233168
+		't' : '6. Expand and Extend myself',
+		'q' : 'Given a non-empty string like "Code" return a string like "CCoCodCode".<br>stringSplosion("Code") → "CCoCodCode"<br>stringSplosion("abc") → "aababc"<br>stringSplosion("ab") → "aab"<br><br>public String stringSplosion(String str) {<br><br><br>}',
+		'a' : 'a3'
 	}],
 	'difficult' : [{
-		't' : 'Multiples of 3 and 5',
-		'q' : '',
-		'a' : 233168
+		't' : '7. Existence of my Genes',
+		'q' : 'Given a string, return the count of the number of times that a substring length 2 appears in the string and also as the last 2 chars of the string, so "hixxxhi" yields 1 (we won\'t count the end substring).<br><br>last2("hixxhi") → 1<br>last2("xaxxaxaxx") → 1<br>last2("axxxaaxx") → 2<br><br>public int last2(String str) {<br><br>}',
+		'a' : 'd1'
 	}, {
-		't' : 'Multiples of 3 and 5',
-		'q' : '',
-		'a' : 233168
+		't' : '8. Multiples of 3 and 5',
+		'q' : 'If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. <br>Find the sum of all the multiples of 3 or 5 below 1000.',
+		'a' : '233168'
 	}]
 };

@@ -21,7 +21,6 @@ Table of Contents
 
 class XDLINE{
 
-	private $accounts_table = "inserttest";
 
 	public $skey = "XDevelopersLeagueDITPortalCvSUSc"; // you can change it
 

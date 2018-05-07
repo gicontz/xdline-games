@@ -2,15 +2,15 @@ var mission1 = {
 	'easy' : [{
 		't' : 'Unique-io Shoe Shop',
 		'q' : 'A shoe shop sells a pair of shoes for $100. The price goes up if the shoe was bought in the 7th, 12th time of the same kind of their shoes on the same day at $10. If John and Willy are customers during that day and the best seller of shoes was bought 5th time on that day, How much worth of money in dollars do John and Willy will spend if they both bought 4 pairs of shoes of the same kind by which is the best seller?<br><img src="images/shoe.jpg" class="mission-img"><img src="images/dollar.jpg" class="mission-img">',
-		'a' : 830
+		'a' : 890
 	}, {
 		't' : 'Making Lustful and Perverted Mind',
 		'q' : '"Way and go round" is a film show ran in the cinemas in 1987. The film was a story of two person making love in the midnight. Saying words such as "fmnwscvj", "cvblai", "xie" pronounced as "famanwascavaj", "caviblai" and "xig" respectively. What does famanwascavaj means?<br><br><img src="images/makelove.jpg" class="mission-img"><img src="images/encryption.png" class="mission-img"><img src="images/love.jpg" style="cursor: pointer; margin: 20px auto; display: block;" id="perverted">',
 		'a' : 'iloveyou'
 	}, {
-		't' : 'Let\'s Count!',
-		'q' : 'How many times does the alphabet \'a\' appear from zero-one hundred.',
-		'a' : 0
+		't' : 'Surfacing the Building',
+		'q' : 'A Trapezoid shaped Building was an Isosceles Trapezoid which have a base of 50 meters. The engineers wanted to cover the surface of the flat part of building of full mirrors with solar panels. To cover it, he must need the area of one of the surface. If the adjuscent angle of the trapezoid is 60&deg; and the hypotenuse is 10 meters, what is the area of one of the surface of the building which is shaped like a trapezoid? A = 1/2 ((b1 + b2) x h)<br><br><img src="images/trapezoid.jpg" class="mission-img">',
+		'a' : 390
 	}],
 	'average' : [{
 		't' : '10001st prime',

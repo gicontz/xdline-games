@@ -56,7 +56,7 @@ XDLINE Team
 				<div class="row">
 					<div class="eas-level level col-md-offset-1 col-md-4 col-sm-12" id="mission-1" data-toggle="modal" 
 					data-target="#access_mission" data-dismiss="modal">
-					<p>MISSION 1</p>
+					<p>MISSION 1 is CLOSED</p>
 				</div>
 				<div class="dif-level level col-md-offset-2 col-md-4 col-sm-12" id="mission-2" data-toggle="modal" 
 				data-target="#access_mission" data-dismiss="modal">
@@ -180,6 +180,11 @@ if(!isset($_SESSION['xdl_part_details']) || !$_SESSION['orgpassed']){
             console.log(callback);
         });
 	});
+
+	$('body').on('click', '#mission-1', function() {
+		alert('Dont you dare!!!');
+	});
+
 </script>
 </body>
 </html>
